@@ -70,6 +70,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_ad_gromore:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "0.0.2"
   flutter_driver:
     dependency: transitive
     description: flutter
@@ -88,13 +95,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutterad:
-    dependency: "direct main"
-    description:
-      path: ".."
-      relative: true
-    source: path
-    version: "0.0.1"
   fuchsia_remote_debug_protocol:
     dependency: transitive
     description: flutter

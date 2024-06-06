@@ -2,9 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutterad/event/ad_event.dart';
-import 'package:flutterad/flutterad.dart';
-import 'package:flutterad/view/ad_banner.dart';
+import 'package:flutter_ad_gromore/event/ad_event.dart';
+import 'package:flutter_ad_gromore/flutterad.dart';
+import 'package:flutter_ad_gromore/view/ad_banner.dart';
 import 'ads_config.dart';
 import 'pro_page.dart';
 
