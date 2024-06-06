@@ -1,0 +1,81 @@
+import java.util.zip.ZipEntry
+import java.util.zip.ZipFile
+
+static aarFileCopy(String srcPathStr, String desPathStr) {
+
+    System.out.println("拷贝aar源文件${srcPathStr} 到 ${desPathStr}");
+
+    try {
+        FileInputStream fis = new FileInputStream(srcPathStr)
+        FileOutputStream fos = new FileOutputStream(desPathStr)
+        byte[] datas = new byte[1024 * 8]
+        int len = 0;
+        while ((len = fis.read(datas)) != -1)
+        {
+            fos.write(datas, 0, len);
+        }
+        fis.close();
+        fos.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+
+copyAar2Host('com.tmt.flutter_plugin_aar')
+void copyAar2Host(String pluginGroup) {
+    Project currentProject = null
+    Project appProject = null
+    rootProject.allprojects.each {
+        p ->
+            boolean isApp = p.plugins.hasPlugin("com.android.application")
+            println("${p.name} isHost --> ${isApp}")
+            if (p.group == pluginGroup) {
+                currentProject = p
+                println("Plugin project name --> $currentProject")
+            }
+            if (isApp) {
+                appProject = p
+                println("Host project name -->  ${p.name}")
+
+            }
+    }
+    Set<File> aarFiles = new HashSet<>()
+    if (appProject != null && currentProject != null) {
+        File libs = new File("${currentProject.projectDir}", 'libs')
+        if (libs.isDirectory()) {
+            libs.listFiles().each {
+                f ->
+                    if (f.name.endsWith('.aar')) {
+                        println("aar name --> ${f.name}")
+                        aarFiles.add(f)
+                    }
+            }
+        }
+
+        if (!aarFiles.isEmpty()) {
+            File applibs = new File("${appProject.projectDir}${File.separator}libs");
+            if (!applibs.isDirectory()) {
+                applibs.mkdirs()
+            }
+            aarFiles.each {
+                f ->
+                    File copyAar = new File("${appProject.projectDir}${File.separator}libs", f.name)
+                    if (!copyAar.exists()) {
+                        copyAar.createNewFile()
+                        aarFileCopy(f.path, copyAar.path)
+                    }else {
+                        // 可以读取aar中的manifest处理aar包版本的问题,这里暂不处理了
+                    }
+            }
+            appProject.dependencies {
+                implementation fileTree(dir: "${appProject.projectDir}${File.separator}libs", include: ['*.jar', '*.aar'])
+            }
+        }
+
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}

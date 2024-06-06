@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/feed_live_feed_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1"
+        android:maxLines="2"
+        android:singleLine="false"
+        android:textColor="#222222"
+        android:textSize="17sp"
+        tools:text="劳力士服务中心，清洗保养，更换配件，9秒费用查询" />
+
+    <FrameLayout
+        android:id="@+id/feed_live_feed_video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/feed_live_feed_desc"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/feed_live_feed_icon"
+        android:layout_width="45dp"
+        android:layout_height="16dp"
+        android:layout_alignStart="@id/feed_live_feed_video"
+        android:layout_alignLeft="@id/feed_live_feed_video"
+        android:layout_alignTop="@id/feed_live_feed_video"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/feed_live_ad_status_icon" />
+
+    <RelativeLayout
+        android:id="@+id/feed_live_feed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@id/feed_live_feed_video"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#F8F8F8"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/feed_live_feed_avatar"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/feed_live_feed_title"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/feed_live_feed_avatar"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_toEndOf="@id/feed_live_feed_avatar"
+            android:layout_toRightOf="@id/feed_live_feed_avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#161823"
+            android:textSize="14sp"
+            tools:text="罗永浩交个朋友直播间" />
+
+        <TextView
+            android:id="@+id/feed_live_feed_fans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feed_live_feed_title"
+            android:layout_alignStart="@id/feed_live_feed_title"
+            android:layout_alignLeft="@id/feed_live_feed_title"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/feed_live_feed_avatar"
+            android:layout_toRightOf="@id/feed_live_feed_avatar"
+            android:gravity="center"
+            android:textColor="#80161823"
+            android:textSize="12sp"
+            tools:text="吊儿郎当" />
+
+        <ImageView
+            android:id="@+id/feed_live_ad_img"
+            android:layout_width="1dp"
+            android:layout_height="12dp"
+            android:layout_below="@id/feed_live_feed_title"
+            android:layout_alignTop="@id/feed_live_feed_fans"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@id/feed_live_feed_fans"
+            android:layout_toRightOf="@id/feed_live_feed_fans"
+            android:background="#80161823" />
+
+        <TextView
+            android:id="@+id/feed_live_feed_watch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feed_live_feed_title"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/feed_live_ad_img"
+            android:layout_toRightOf="@id/feed_live_ad_img"
+            android:gravity="center"
+            android:textColor="#80161823"
+            android:textSize="12sp"
+            tools:text="吊儿郎当发发发" />
+
+        <Button
+            android:id="@+id/feed_live_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:text="@string/live_feed_btn"
+            android:textColor="#F04142"
+            android:background="@null"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_toStartOf="@id/feed_live_btn"
+            android:layout_toLeftOf="@id/feed_live_btn"
+            android:background="@drawable/feed_live_icon_red" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/feed_live_feed_logo"
+        android:layout_width="36dp"
+        android:layout_height="14dp"
+        android:layout_below="@id/feed_live_feed_layout"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp" />
+
+
+    <TextView
+        android:id="@+id/feed_live_feed_logo_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:layout_below="@id/feed_live_feed_layout"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@id/feed_live_feed_logo"
+        android:layout_toRightOf="@id/feed_live_feed_logo"
+        android:text="穿山甲联盟"
+        android:textColor="#57161823"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/feed_live_feed_close"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@id/feed_live_feed_layout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/tt_dislike" />
+
+</RelativeLayout>

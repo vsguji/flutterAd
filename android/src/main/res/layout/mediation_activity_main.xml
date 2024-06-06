@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/title"
+        android:gravity="center"
+        android:text="Bytedance Mediation Demo"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivity"
+        tools:ignore="HardcodedText">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#E3E2E2"/>
+
+            <Button
+                android:id="@+id/btn_main_feed"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="left|center_vertical"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/demo_native"
+                android:drawableRight="@drawable/draw_forward"
+                android:stateListAnimator="@null"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="#fff"
+                android:textAllCaps="false"
+                android:text="@string/main_menu_feed"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:theme="@style/PrimaryButton" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#E3E2E2"/>
+
+            <Button
+                android:id="@+id/btn_main_feed_listview"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="left|center_vertical"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/demo_native"
+                android:drawableRight="@drawable/draw_forward"
+                android:stateListAnimator="@null"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="#fff"
+                android:textAllCaps="false"
+                android:text="@string/main_menu_feed_listview"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:theme="@style/PrimaryButton" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#E3E2E2"/>
+
+            <Button
+                android:id="@+id/btn_main_feed_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="left|center_vertical"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/demo_native"
+                android:drawableRight="@drawable/draw_forward"
+                android:stateListAnimator="@null"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="#fff"
+                android:textAllCaps="false"
+                android:text="@string/main_menu_feed_recyclerview"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:theme="@style/PrimaryButton" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#E3E2E2"/>
+
+            <Button
+                android:id="@+id/btn_main_draw"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="left|center_vertical"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/demo_native"
+                android:drawableRight="@drawable/draw_forward"
+                android:stateListAnimator="@null"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="#fff"
+                android:textAllCaps="false"
+                android:text="@string/main_menu_draw"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:theme="@style/PrimaryButton" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#E3E2E2"/>
+
+            <Button
+                android:id="@+id/btn_main_banner"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="left|center_vertical"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/demo_native"
+                android:drawableRight="@drawable/draw_forward"
+                android:stateListAnimator="@null"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="#fff"
+                android:textAllCaps="false"
+                android:text="@string/main_menu_banner"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:theme="@style/PrimaryButton" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#E3E2E2"/>
+
+            <Button
+                android:id="@+id/btn_main_Splash"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="left|center_vertical"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/demo_native"
+                android:drawableRight="@drawable/draw_forward"
+                android:stateListAnimator="@null"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="#fff"
+                android:textAllCaps="false"
+                android:text="@string/main_menu_splash"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:theme="@style/PrimaryButton" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#E3E2E2"/>
+
+            <Button
+                android:id="@+id/btn_main_Reward"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="left|center_vertical"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/demo_native"
+                android:drawableRight="@drawable/draw_forward"
+                android:stateListAnimator="@null"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="#fff"
+                android:textAllCaps="false"
+                android:text="@string/main_menu_reward"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:theme="@style/PrimaryButton" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#E3E2E2"/>
+
+            <Button
+                android:id="@+id/btn_main_full_interaction"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="left|center_vertical"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/demo_native"
+                android:drawableRight="@drawable/draw_forward"
+                android:stateListAnimator="@null"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="#fff"
+                android:textAllCaps="false"
+                android:text="@string/main_menu_new_interaction"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:theme="@style/PrimaryButton" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3E2E2"/>
+
+            <Button
+                android:id="@+id/btn_main_tool"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="left|center_vertical"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/demo_native"
+                android:drawableRight="@drawable/draw_forward"
+                android:stateListAnimator="@null"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="#fff"
+                android:textAllCaps="false"
+                android:text="测试工具"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:theme="@style/PrimaryButton" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3E2E2"/>
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="textPersonName"
+                tools:ignore="TextViewEdits" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

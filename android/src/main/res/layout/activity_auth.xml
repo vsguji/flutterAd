@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radio_group_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/douyin_account_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抖音账号授权"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/no_auth_provided"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宿主停止提供授权" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/clear_token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清空本地token相关信息" />
+</LinearLayout>

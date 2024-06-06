@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_media_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/ad_mediation_id"/>
+
+    <Button
+        android:id="@+id/bt_load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载Banner广告" />
+    <Button
+        android:id="@+id/bt_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="展示Banner广告" />
+    <FrameLayout
+        android:id="@+id/banner_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#D5D5D5" />
+
+</LinearLayout>

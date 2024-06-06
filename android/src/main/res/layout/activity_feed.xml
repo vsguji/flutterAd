@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_FD_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title"
+        android:text="BytedanceUnion Demo"
+        android:textAllCaps="false"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="2dp"
+        android:paddingLeft="13dp"
+        android:drawableStart="@drawable/arror_foreground"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#E3E2E2"/>
+
+    <Button
+        android:id="@+id/btn_main_feed_lv"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="start|center_vertical"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/demo_native"
+        android:drawableEnd="@drawable/draw_forward"
+        android:stateListAnimator="@null"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="#fff"
+        android:textAllCaps="false"
+        android:text="@string/main_menu_feed_list_view"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:theme="@style/PrimaryButton" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="#E3E2E2"/>
+
+    <Button
+        android:id="@+id/btn_main_feed_rv"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/demo_native"
+        android:drawableEnd="@drawable/draw_forward"
+        android:stateListAnimator="@null"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="#fff"
+        android:textAllCaps="false"
+        android:text="@string/main_menu_feed_recycler_view"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:theme="@style/PrimaryButton" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:background="#E3E2E2"/>
+
+    <Button
+        android:id="@+id/btn_main_feed_onepointfive"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/demo_native"
+        android:drawableRight="@drawable/draw_forward"
+        android:stateListAnimator="@null"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="#fff"
+        android:textAllCaps="false"
+        android:text="@string/main_menu_feed_onepoihalf"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:theme="@style/PrimaryButton" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E2E2"/>
+
+    <Button
+        android:id="@+id/express_native_ad"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="start|center_vertical"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/demo_native"
+        android:drawableEnd="@drawable/draw_forward"
+        android:stateListAnimator="@null"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="#fff"
+        android:textAllCaps="false"
+        android:text="@string/main_menu_feed_webview"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:theme="@style/PrimaryButton" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E2E2"/>
+
+    <Button
+        android:id="@+id/express_native_ad_list"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="start|center_vertical"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/demo_native"
+        android:drawableEnd="@drawable/draw_forward"
+        android:stateListAnimator="@null"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="#fff"
+        android:textAllCaps="false"
+        android:text="@string/main_menu_feed_webview_list"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:theme="@style/PrimaryButton" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E2E2"/>
+
+    <Button
+        android:id="@+id/express_native_ad_onepointfive"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/demo_native"
+        android:drawableRight="@drawable/draw_forward"
+        android:stateListAnimator="@null"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="#fff"
+        android:textAllCaps="false"
+        android:text="@string/main_menu_feed_webview_onepoihalf"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:theme="@style/PrimaryButton" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E2E2"/>
+
+    <Button
+        android:id="@+id/express_native_ad_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/demo_native"
+        android:drawableRight="@drawable/draw_forward"
+        android:stateListAnimator="@null"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="#fff"
+        android:textAllCaps="false"
+        android:text="@string/main_menu_feed_webview_onepoihalf_recycler"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:theme="@style/PrimaryButton" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E2E2"/>
+
+    <Button
+        android:id="@+id/express_native_icon_ad"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/demo_native"
+        android:drawableRight="@drawable/draw_forward"
+        android:stateListAnimator="@null"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="#fff"
+        android:textAllCaps="false"
+        android:text="@string/main_menu_feed_icon_ad"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:theme="@style/PrimaryButton" />
+
+
+</LinearLayout>

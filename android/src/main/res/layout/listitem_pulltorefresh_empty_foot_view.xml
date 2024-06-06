@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_view"
+    android:layout_gravity="center_vertical|right"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#00ffffff"
+    android:orientation="horizontal"
+    android:layout_marginRight="5dp"
+    android:focusable="true"
+    android:contentDescription="左滑查看更多"
+    android:visibility="invisible">
+
+    <View
+        android:id="@+id/anim_view_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <com.pengsheng.game.onepointfive.TTLoadingMoreView
+        android:id="@+id/more"
+        android:layout_width="15dp"
+        android:layout_height="38dp" />
+
+    <View
+        android:id="@+id/anim_view_middle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="20dp"
+        android:layout_marginLeft="2dp"
+        android:layout_height="wrap_content"
+        android:ems="1"
+        android:textSize="14sp"
+        android:visibility="visible"
+        android:textColor="#57161823"
+        android:focusable="false"
+        android:text="左滑查看更多"/>
+    <View
+        android:id="@+id/anim_view_right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

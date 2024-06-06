@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:id="@+id/fl_onepointfive_root">
+
+    <com.pengsheng.game.onepointfive.TTPullToRefreshHorizontalRecyclerView
+        android:id="@+id/ptr_horizontal_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="36dp"
+        android:layout_marginTop="16dp"
+        android:scrollbars="none"
+        />
+    <TextView
+        android:id="@+id/tv_ad_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="10sp"
+        android:textColor="#57161823"
+        android:layout_gravity="bottom|left"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+</FrameLayout>

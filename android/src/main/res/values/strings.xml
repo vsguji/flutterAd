@@ -1,0 +1,114 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">UE世界</string>
+    <string name="i">i</string>
+    <string name="show_fullscreen_video">展示全屏视频广告</string>
+    <string name="load_vertical_fullscreen_video">加载竖版全屏视频广告</string>
+    <string name="load_horizontal_fullscreen_video">加载横版全屏视频广告</string>
+    <string name="main_sdk_version_tip">SDK Version %1$s</string>
+
+
+    <string name="slide_up_to_unlock">Slide up To Unlock</string>
+    <string name="release_to_unlock">Release to Unlock</string>
+    <string name="pull_canceled">Pull Canceled</string>
+
+
+    <string name="admob_app_id">ca-app-pub-2547387438729744~9596900917</string>
+    <string name="admob_full_video_id">ca-app-pub-2547387438729744/6779165884</string>
+    <string name="admob_reward_video_id">ca-app-pub-2547387438729744/8126894817</string>
+    <string name="admob_interstitial_id">ca-app-pub-2547387438729744/5330195998</string>
+    <string name="admob_banner_id">ca-app-pub-2547387438729744/2789477346</string>
+    <string name="express_native_ad" tools:ignore="ExtraTranslation">Express_native_ad</string>
+
+    <string name="demo_ad">Ad</string>
+    <string name="demo_reward_feedback">反馈</string>
+
+    <string name="live_feed_btn">去抖音直播间</string>
+    <string name="live_fans_text">粉丝 %1$s</string>
+    <string name="live_watch_text">观看 %1$s</string>
+
+    <string name="main_menu_splash">开屏广告</string>
+    <string name="main_menu_splash_kotlin">开屏广告 kotlin示例</string>
+    <string name="main_menu_feed">信息流广告（单个）</string>
+    <string name="main_menu_feed_kotlin">信息流广告（单个） kotlin示例</string>
+    <string name="main_menu_feed_listview">信息流广告（ListView）</string>
+    <string name="main_menu_feed_recyclerview">信息流广告（RecyclerView）</string>
+    <string name="main_menu_draw">Draw广告</string>
+    <string name="main_menu_draw_kotlin">Draw广告 kotlin示例</string>
+    <string name="main_menu_interaction">插屏广告</string>
+    <string name="main_menu_banner">Banner广告</string>
+    <string name="main_menu_banner_kotlin">Banner广告 kotlin示例</string>
+    <string name="main_menu_reward">激励视频广告</string>
+    <string name="main_menu_reward_kotlin">激励视频广告 kotlin示例</string>
+    <string name="main_menu_full">全屏视频广告</string>
+    <string name="main_menu_new_interaction">新插屏广告</string>
+    <string name="main_menu_new_interaction_kotlin">新插屏广告 kotlin示例</string>
+    <string name="main_menu_stream">贴片广告</string>
+    <string name="main_menu_adapter">自定义广告聚合</string>
+    <string name="main_menu_tools">工具</string>
+
+    <string name="main_menu_feed_list_view">自渲染信息流广告(ListView实现)</string>
+    <string name="main_menu_feed_recycler_view">自渲染信息流广告(RecyclerView实现)</string>
+    <string name="main_menu_feed_onepoihalf">自渲染信息流广告(1.5卡)</string>
+    <string name="main_menu_feed_webview">模版渲染信息流广告</string>
+    <string name="main_menu_feed_webview_list">模版渲染信息流广告(ListView实现)</string>
+    <string name="main_menu_feed_webview_onepoihalf">模版渲染信息流1.5卡广告</string>
+    <string name="main_menu_feed_webview_onepoihalf_recycler">模版渲染信息流1.5卡广告(RecyclerView实现)</string>
+    <string name="main_menu_feed_icon_ad">模板渲染icon广告样式</string>
+
+    <string name="main_menu_draw_native">自渲染Draw广告</string>
+    <string name="main_menu_draw_webview">模版渲染Draw广告</string>
+    <string name="main_menu_banner_native">自渲染Banner广告</string>
+    <string name="main_menu_banner_webview">模版渲染Banner广告</string>
+    <string name="main_menu_interaction_native">自渲染插屏广告</string>
+    <string name="main_menu_interaction_webview">模版渲染插屏广告</string>
+    <string name="main_menu_reward_native">自渲染激励视频广告</string>
+    <string name="main_menu_reward_webview">模版渲染激励视频广告</string>
+    <string name="main_menu_full_native">自渲染全屏视频广告</string>
+    <string name="main_menu_full_webview">模版渲染全屏视频广告</string>
+
+    <string name="main_menu_splash_native">自渲染开屏广告</string>
+    <string name="main_menu_splash_half">自渲染半屏开屏广告</string>
+    <string name="main_menu_splash_click_eye">自渲染点睛开屏广告</string>
+    <string name="main_menu_splash_webview">模版渲染开屏广告</string>
+    <string name="main_menu_splash_webview_horizontal">模版渲染横屏开屏广告</string>
+    <string name="main_menu_splash_horizontal">自渲染横屏开屏广告</string>
+    <string name="main_menu_splash_hand">开屏广告-小手</string>
+    <string name="main_menu_splash_shake">开屏广告-摇一摇</string>
+    <string name="main_menu_splash_twist">开屏广告-扭一扭</string>
+    <string name="main_menu_splash_slideup">开屏广告-上滑</string>
+    <string name="main_menu_csj_splash">自渲染适配新接口开屏</string>
+
+    <string name="main_menu_full_interaction_half">新插屏半屏(图片或视频)</string>
+    <string name="main_menu_full_interaction">新插屏全屏(图片或视频)</string>
+
+    <string name="load_full_interaction_horizontal">加载横版新插屏广告</string>
+    <string name="load_full_interaction_vertical">加载竖版新插屏广告</string>
+    <string name="show_full_interaction">展示新插屏广告</string>
+
+    <string name="mopub_adapter_reward">Mopub Adapter 激励视频</string>
+    <string name="mopub_adapter_full">Mopub Adapter 全屏视频</string>
+    <string name="mopub_adapter_banner">Mopub Adapter Banner</string>
+    <string name="mopub_adapter_interstitial">Mopub Adapter 插屏</string>
+
+    <string name="admob_adapter_reward">Admob Adapter 激励视频</string>
+    <string name="admob_adapter_full">Admob Adapter 全屏视频</string>
+    <string name="admob_adapter_banner">Admob Adapter Banner</string>
+    <string name="admob_adapter_interstitial">Admob Adapter 插屏</string>
+    <string name="init_csj_sdk">第一步：初始化穿山甲SDK</string>
+    <string name="start_show_ad">第二步：开始展示广告</string>
+
+    <item name="tt_id_render_tag" type="id"></item>
+
+    <string name="ad_mediation_id" translatable="false">当前广告位id位：%1$s</string>
+    <string name="feed_express_media_id" translatable="false">102919164</string>
+    <string name="feed_native_media_id" translatable="false">102919164</string>
+    <string name="draw_express_media_id" translatable="false">102914555</string>
+    <string name="draw_native_media_id" translatable="false">102919164</string>
+    <string name="banner_media_id" translatable="false">102914453</string>
+    <string name="banner_bidding_media_id" translatable="false">102914453</string>
+    <string name="splash_media_id" translatable="false">102914843</string>
+    <string name="reward_media_id" translatable="false">945700410</string>
+    <string name="interstitial_full_interstitial_media_id" translatable="false">102176665</string>
+    <string name="interstitial_full_full_media_id" translatable="false">102918149</string>
+    <string name="full_media_id" translatable="false">102918147</string>
+</resources>
