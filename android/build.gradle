@@ -127,6 +127,7 @@ android {
         // https://mvnrepository.com/artifact/com.dingmouren.recyclerview/LayoutManagerGroup
 //        implementation 'com.dingmouren.recyclerview:LayoutManagerGroup:1.0.1'
         implementation 'com.github.DingMouRen:LayoutManagerGroup:1e6f4f96eb'
+        implementation 'com.github.bumptech.glide:glide:4.15.1'
     }
 
    testOptions {

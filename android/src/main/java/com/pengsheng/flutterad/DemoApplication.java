@@ -1,6 +1,9 @@
 package com.pengsheng.flutterad;
 
 import android.content.Context;
+import android.content.res.Configuration;
+
+import androidx.annotation.NonNull;
 import androidx.multidex.MultiDex;
 import androidx.multidex.MultiDexApplication;
 
@@ -26,7 +29,6 @@ public class DemoApplication extends MultiDexApplication {
        // MultiDex.install(this);
        // DemoApplication.context = this;
     }
-
     public  static  Context getAppContext() {
         return DemoApplication.context;
     }
