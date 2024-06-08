@@ -10,6 +10,7 @@ import android.widget.FrameLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
+import com.bytedance.pangle.activity.GeneratePluginAppCompatActivity;
 import com.bytedance.sdk.openadsdk.AdSlot;
 import com.bytedance.sdk.openadsdk.CSJAdError;
 import com.bytedance.sdk.openadsdk.CSJSplashAd;
@@ -27,7 +28,7 @@ import com.pengsheng.flutterad.utils.UIUtils;
 /**
  * 开屏广告
  */
-public class AdSplashActivity extends AppCompatActivity implements TTAdNative.CSJSplashAdListener,CSJSplashAd.SplashAdListener {
+public class AdSplashActivity extends GeneratePluginAppCompatActivity implements TTAdNative.CSJSplashAdListener,CSJSplashAd.SplashAdListener {
     private final String TAG = AdSplashActivity.class.getSimpleName();
     // 广告容器
     private FrameLayout ad_container;
@@ -40,7 +41,7 @@ public class AdSplashActivity extends AppCompatActivity implements TTAdNative.CS
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         UIUtils.hideBottomUIMenu(this);
         StatusBarUtils.setTranslucent(this);
@@ -49,12 +50,17 @@ public class AdSplashActivity extends AppCompatActivity implements TTAdNative.CS
         initData();
     }
 
+    @Override
+    public String getPluginPkgName() {
+        return "com.pengsheng.flutter_ad_gromore";
+    }
+
     /**
      * 初始化View
      */
     private void initView() {
-        ad_container = findViewById(R.id.splash_ad_container);
-        ad_logo = findViewById(R.id.splash_ad_logo);
+        ad_container = (FrameLayout) findViewById(R.id.splash_ad_container);
+        ad_logo = (AppCompatImageView) findViewById(R.id.splash_ad_logo);
     }
 
     /**
