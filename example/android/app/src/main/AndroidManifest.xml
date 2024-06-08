@@ -3,7 +3,9 @@
         android:label="flutterad_example"
         android:name="com.pengsheng.flutterad.DemoApplication"
         android:icon="@mipmap/ic_launcher"
-        tools:replace="android:name">
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        tools:replace="android:name,android:allowBackup,android:appComponentFactory">
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -49,42 +51,42 @@
 
         <!-- baidu start================== -->
         <!-- 声明打开落地页的Activity（不建议修改主题配置）-->
-        <activity
-            android:name="com.baidu.mobads.sdk.api.AppActivity"
-            android:configChanges="screenSize|keyboard|keyboardHidden|orientation"
-            android:theme="@android:style/Theme.NoTitleBar" />
+<!--        <activity-->
+<!--            android:name="com.baidu.mobads.sdk.api.AppActivity"-->
+<!--            android:configChanges="screenSize|keyboard|keyboardHidden|orientation"-->
+<!--            android:theme="@android:style/Theme.NoTitleBar" />-->
         <!-- 声明打开显示激励视频/全屏视频的Activity-->
-        <activity
-            android:name="com.baidu.mobads.sdk.api.MobRewardVideoActivity"
-            android:configChanges="screenSize|orientation|keyboardHidden"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+<!--        <activity-->
+<!--            android:name="com.baidu.mobads.sdk.api.MobRewardVideoActivity"-->
+<!--            android:configChanges="screenSize|orientation|keyboardHidden"-->
+<!--            android:launchMode="singleTask"-->
+<!--            android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
 
         <!-- 如果targetSdkVersion设置值>=24，则强烈建议添加以下provider，否则会影响app变现 -->
         <!-- android:authorities="${packageName}.bd.provider" authorities中${packageName}部分必须替换成app自己的包名 -->
         <!-- 原来的FileProvider在新版本中改为BdFileProvider,继承自v4的FileProvider,需要在应用内引用support-v4包 -->
-        <provider
-            android:name="com.baidu.mobads.sdk.api.BdFileProvider"
-            android:authorities="${applicationId}.bd.provider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/bd_file_paths" />
-        </provider>
+<!--        <provider-->
+<!--            android:name="com.baidu.mobads.sdk.api.BdFileProvider"-->
+<!--            android:authorities="${applicationId}.bd.provider"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true">-->
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/bd_file_paths" />-->
+<!--        </provider>-->
         <!-- baidu end================== -->
 
         <!-- GDT start================== -->
         <!-- targetSDKVersion >= 24时才需要添加这个provider。provider的authorities属性的值为${applicationId}.fileprovider，请开发者根据自己的${applicationId}来设置这个值，例如本例中applicationId为"com.qq.e.union.demo"。 -->
-        <provider
-            android:name="com.qq.e.comm.GDTFileProvider"
-            android:authorities="${applicationId}.gdt.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/gdt_file_path" />
-        </provider>
+<!--        <provider-->
+<!--            android:name="com.qq.e.comm.GDTFileProvider"-->
+<!--            android:authorities="${applicationId}.gdt.fileprovider"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true">-->
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/gdt_file_path" />-->
+<!--        </provider>-->
 
     </application>
     <!-- Required to query activities that can process text, see:

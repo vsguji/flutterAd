@@ -102,15 +102,15 @@ public class AdSplashActivity extends AppCompatActivity implements TTAdNative.CS
      * 完成广告，退出开屏页面
      */
     private void finishPage() {
-        finish();
-        // 设置退出动画
-        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         // 销毁
         if (gmSplashAd != null&&gmSplashAd.getMediationManager()!=null) {
             gmSplashAd.setSplashAdListener(null);
             gmSplashAd.getMediationManager().destroy();
             gmSplashAd = null;
         }
+        finish();
+        // 设置退出动画
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     /**
