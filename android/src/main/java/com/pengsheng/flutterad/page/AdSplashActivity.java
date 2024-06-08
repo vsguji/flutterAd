@@ -191,6 +191,6 @@ public class AdSplashActivity extends AppCompatActivity implements TTAdNative.CS
     public void onSplashAdClose(CSJSplashAd csjSplashAd, int i) {
         Log.d(TAG, "onSplashAdClose");
         AdEventHandler.getInstance().sendEvent(new AdEvent(this.posId, AdEventAction.onAdClosed));
-        finishPage();
+       finishPage();
     }
 }

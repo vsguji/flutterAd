@@ -192,6 +192,12 @@ class _HomePageState extends State<HomePage> {
               ),
             TextButton(
                 onPressed: () async {
+                  var isOk = await Flutterad.showSplashAd(AdsConfig.splashId);
+                  if (isOk) {}
+                },
+                child: const Text('splash')),
+            TextButton(
+                onPressed: () async {
                   var isOk = await Flutterad.showInterstitialAd(
                       AdsConfig.interstitialId);
                   if (isOk) {}
