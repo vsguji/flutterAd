@@ -1,6 +1,6 @@
 name: flutter_ad_gromore
 description: "集成穿山甲广告,GroMore聚合sdk 6.1.2.5"
-version: 0.0.9
+version: 0.1.0
 homepage: 'https://github.com/vsguji/flutterAd.git'
 
 environment:
