@@ -21,7 +21,7 @@ static aarFileCopy(String srcPathStr, String desPathStr) {
     }
 }
 
-copyAar2Host('com.tmt.flutter_plugin_aar')
+copyAar2Host('com.pengsheng.flutterad')
 void copyAar2Host(String pluginGroup) {
     Project currentProject = null
     Project appProject = null
